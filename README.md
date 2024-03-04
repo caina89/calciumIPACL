@@ -1,9 +1,9 @@
 # calciumIPACL
 Code to reproduce analysee in the Calcium IPACL paper: link_to_paper
 
-## Quality Control (QC)
+## Quality Control (QC) using 1_qc.ipynb
 
-QC was done using code from 1_QC.ipynb with the following order:
+QC was done with the following order:
 1. Calculate QC metrics.
 2. Filter low quality cells based on MADs parameters.
 3. Write files for runing SoupX in R.
@@ -13,7 +13,9 @@ QC was done using code from 1_QC.ipynb with the following order:
 7. Write QC-ed count matrix for downstream analyses.
 
 
-## SoupX (in R)
+## SoupX (in R) using 1_qc_soupx.ipynb
 
-Run SoupX using 1_qc_soupx.ipynb. Read output files generated from the first half of 1_qc.ipynb, write corrected count matrix for further analyses.
+Read output files generated from the first half of 1_qc.ipynb, run SoupX, write corrected count matrix for further analyses.
+
+## Combine samples
 
