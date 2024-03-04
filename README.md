@@ -10,6 +10,7 @@ QC was done using code from 1_QC.ipynb with the following order:
 4. Read output files from SoupX.
 5. Filter out low quality genes based on the SoupX-corrected count matrix.
 6. Detecting doublets.
+7. Write QC-ed count matrix for downstream analyses.
 
 
 ## SoupX (in R)
