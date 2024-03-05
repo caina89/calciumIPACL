@@ -1,6 +1,6 @@
 # Calcium IPACL
 
-Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the recommended pipeline suggested in the best practice for single-cell data analysis [2019](https://doi.org/10.15252/msb.20188746), [2023](https://doi.org/10.1038/s41576-023-00586-w) and the online [tutorial]([https://doi.org/10.15252/msb.20188746](https://www.sc-best-practices.org/preamble.html), the main package used is [SCANPY](https://doi.org/10.1186/s13059-017-1382-0).
+Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the recommended pipeline suggested in the best practice for single-cell data analysis [2019](https://doi.org/10.15252/msb.20188746), [2023](https://doi.org/10.1038/s41576-023-00586-w) and the online [tutorial](https://www.sc-best-practices.org/preamble.html), the main package used is [SCANPY](https://doi.org/10.1186/s13059-017-1382-0).
 
 ## Quality Control (QC) using 1_qc.ipynb
 
