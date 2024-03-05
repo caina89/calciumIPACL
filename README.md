@@ -1,4 +1,4 @@
-# CalciumIPACL
+# Calcium IPACL
 
 Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper
 
