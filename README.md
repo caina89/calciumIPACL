@@ -1,7 +1,7 @@
 # calciumIPACL
 Code to reproduce analyses in the Calcium IPACL paper: link_to_paper
 
-## Quality Control (QC) using 1_qc.ipynb (in Python)
+## Quality Control (QC) using 1_qc.ipynb
 
 Perfrom QC on each individual sample with the following steps:
 1. Calculate QC metrics.
@@ -18,7 +18,7 @@ Perfrom QC on each individual sample with the following steps:
 Read output files generated from the first half of 1_qc.ipynb, run SoupX in R, write corrected count matrix for further analyses.
 
 
-## Combine samples using 2_combine_*.ipynb (in Python)
+## Combine samples using 2_combine_*.ipynb
 Combine individual samples into the following groups and perform batch correction using Scanorama for downstream analyses:
 1. Each treatment, including:<br>
    (1) control, (2) condense milk, (3) elevated platform, (4) quinine, (5) social.
@@ -39,6 +39,8 @@ Combine individual samples into the following groups and perform batch correctio
 
 
 ## Generate plots and tables from MapMyCells annotations using 3_mapmycells_*.ipynb
-Plot UMAPs and barplots using annotations from MapMyCells. For each individual sample and combined samples. 
+Generte UMAPs, barplots and tables using annotations from MapMyCells. For each individual sample and combined samples. 
+
+## Differentially expressed genes (DEGs) analyses using 4_DEG_*.ipynb
 
 
