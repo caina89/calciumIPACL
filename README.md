@@ -23,15 +23,15 @@ Combine individual samples into the following groups and perform batch correctio
    (1) control, (2) condense milk, (3) elevated platform, (4) quinine, (5) social.
 2. Each treatment with control, including:
    (1) condense milk + control,<br>
-   (2) elevated platform + control,
-   (3) quinine + control,
+   (2) elevated platform + control,<br>
+   (3) quinine + control,<br>
    (4) social + control.
 4. Two treatments, including:
-   (1) elevated platform + condense milk,
-   (2) quinine + condense milk,
-   (3) quinine + elevated platform,
-   (4) social + condense milk,
-   (5) social + elevated platform,
+   (1) elevated platform + condense milk,<br>
+   (2) quinine + condense milk,<br>
+   (3) quinine + elevated platform,<br>
+   (4) social + condense milk,<br>
+   (5) social + elevated platform,<br>
    (6) social + quinine.
 5. All treatments without control.
 6. All treatments with control.
