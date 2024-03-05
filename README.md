@@ -29,15 +29,15 @@ Combine individual samples into the following groups and perform batch correctio
    (2) elevated platform + control<br>
    (3) quinine + control<br>
    (4) social + control
-4. Two treatments, including:<br>
+3. Two treatments, including:<br>
    (1) elevated platform + condense milk<br>
    (2) quinine + condense milk<br>
    (3) quinine + elevated platform<br>
    (4) social + condense milk<br>
    (5) social + elevated platform<br>
    (6) social + quinine
-5. All treatments without control.
-6. All treatments with control.
+4. All treatments without control.
+5. All treatments with control.
 
 
 ## Generate plots and tables from MapMyCells annotations using 3_mapmycells_*.ipynb
@@ -49,8 +49,8 @@ For each individual sample and combined samples, generte UMAPs, barplots and tab
 
 For each data listed below, generate pseudobulks using decoupleR, run DEG analysis using DESeq2.
 1. 1 treatment vs. controls (using the combined data in category 2)
-2. 1 treatment vs. 1 treatment (using the combined data in category 4)
-3. 1 treatment vs. 3 treatments (using the combined data in category 5)
+2. 1 treatment vs. 1 treatment (using the combined data in category 3)
+3. 1 treatment vs. 3 treatments (using the combined data in category 4)
 
 
 
