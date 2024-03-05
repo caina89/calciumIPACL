@@ -42,14 +42,14 @@ Combine individual samples into the following groups and perform batch correctio
 As such, we retain as many overlapping genes in each combination as possible for further analyses.
 
 
-## Explore [MapMyCells](https://knowledge.brain-map.org/mapmycells/process) annotations using 3_mapmycells_*.ipynb
+## Explore MapMyCells annotations using 3_mapmycells_*.ipynb
 
-For each individual sample and combined samples, generate UMAPs, bar plots and tables using annotations from MapMyCells. 
+For each individual sample and combined samples, generate UMAPs, bar plots and tables using annotations from [MapMyCells](https://knowledge.brain-map.org/mapmycells/process). 
 
 
 ## Differentially expressed genes (DEGs) analyses using 4_DEG_*.ipynb
 
-For each data listed below, generate pseudobulks using decoupleR, and run DEG analysis using DESeq2.
+For each data listed below, generate pseudobulks using [decoupleR](https://doi.org/10.1093/bioadv/vbac016), and run DEG analysis using [DESeq2](https://doi.org/10.1186/s13059-014-0550-8).
 1. 1 treatment vs. controls (using the combined data in category 2)
 2. 1 treatment vs. 1 treatment (using the combined data in category 3)
 3. 1 treatment vs. 3 treatments (using the combined data in category 4)
