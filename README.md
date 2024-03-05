@@ -41,6 +41,15 @@ Combine individual samples into the following groups and perform batch correctio
 ## Generate plots and tables from MapMyCells annotations using 3_mapmycells_*.ipynb
 Generte UMAPs, barplots and tables using annotations from MapMyCells. For each individual sample and combined samples. 
 
+
 ## Differentially expressed genes (DEGs) analyses using 4_DEG_*.ipynb
+For each data listed below, generate pseudobulks using decoupleR, run DEG analysis using DESeq2.
+1. 1 treatment vs. controls (using the combined data in category 2)
+2. 1 treatment vs. 1 treatment (using the combined data in category 4)
+3. 1 treatment vs. 3 treatments (using the combined data in category 5)
+
+
+
+
 
 
