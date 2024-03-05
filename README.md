@@ -1,6 +1,6 @@
 # Calcium IPACL
 
-Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the pipeline recommended in this [paper](https://doi.org/10.1038/s41576-023-00586-w), the main package used is [SCANPY](https://doi.org/10.1186/s13059-017-1382-0).
+Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the pipeline recommended in the "current best practice" [paper](https://doi.org/10.1038/s41576-023-00586-w), the main package used is [SCANPY](https://doi.org/10.1186/s13059-017-1382-0).
 
 ## Quality Control (QC) using 1_qc.ipynb
 
