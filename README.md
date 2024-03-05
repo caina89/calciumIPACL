@@ -1,6 +1,6 @@
 # Calcium IPACL
 
-Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper
+Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the pipeline recommended by this [paper](https://doi.org/10.1038/s41576-023-00586-w)
 
 ## Quality Control (QC) using 1_qc.ipynb
 
