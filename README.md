@@ -17,6 +17,7 @@ Perfrom QC on each individual sample with the following steps:
 
 Read output files generated from the first half of 1_qc.ipynb, run SoupX in R, write corrected count matrix for further analyses.
 
+
 ## Combine samples using 2_combine_*.ipynb (in Python)
 Combine individual samples into the following groups and perform batch correction using Scanorama for downstream analyses:
 1. Each treatment, including:<br>
@@ -35,6 +36,7 @@ Combine individual samples into the following groups and perform batch correctio
    (6) social + quinine.
 5. All treatments without control.
 6. All treatments with control.
+
 
 ## Generate plots and tables using MapMyCells annotations using 3_mapmycells_*.ipynb
 
