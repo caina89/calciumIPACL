@@ -3,19 +3,19 @@ Code to reproduce analyses in the Calcium IPACL paper: link_to_paper
 
 ## Quality Control (QC) using 1_qc.ipynb (in Python)
 
-QC was done with the following order:
+Perfrom QC on each individual sample with the following steps:
 1. Calculate QC metrics.
-2. Filter low quality cells based on MADs parameters.
+2. Filter out low quality cells based on MADs parameters.
 3. Write files for runing SoupX in R.
 4. Read output files from SoupX.
 5. Filter out low quality genes based on the SoupX-corrected count matrix.
-6. Detecting doublets.
-7. Write QC-ed count matrix for downstream analyses.
+6. Detect doublets.
+7. Write QC-ed count matrix for further analyses.
 
 
 ## SoupX using 1_qc_soupx.ipynb (in R).
 
-Read output files generated from the first half of 1_qc.ipynb, run SoupX, write corrected count matrix for further analyses.
+Read output files generated from the first half of 1_qc.ipynb, run SoupX in R, write corrected count matrix for further analyses.
 
 ## Combine samples using 2_combine_*.ipynb (in Python)
 Combine individual samples into the following groups and perform batch correction using Scanorama for downstream analyses:
@@ -35,3 +35,8 @@ Combine individual samples into the following groups and perform batch correctio
    (6) social + quinine.
 5. All treatments without control.
 6. All treatments with control.
+
+## Generate plots and tables using MapMyCells annotations using 3_mapmycells_*.ipynb
+
+
+
