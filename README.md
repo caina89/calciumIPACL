@@ -1,16 +1,16 @@
 # Calcium IPACL
 
-Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the pipeline recommended in this [paper](https://doi.org/10.1038/s41576-023-00586-w).
+Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the pipeline recommended in this [paper](https://doi.org/10.1038/s41576-023-00586-w), the main package used is [SCANPY](https://doi.org/10.1186/s13059-017-1382-0).
 
 ## Quality Control (QC) using 1_qc.ipynb
 
 Perfrom QC on each individual sample using the following steps:
 1. Calculate QC metrics.
 2. Filter out low-quality cells based on the median absolute deviations ([MADs](https://doi.org/10.1186/s13059-020-02136-7)) parameters.
-3. Generate files for running SoupX in R.
+3. Generate files for running [SoupX](https://doi.org/10.1093/gigascience/giaa151) in R.
 4. Read output files from SoupX.
 5. Filter out low-quality genes based on the SoupX-corrected count matrix.
-6. Detect doublets using Scrublet.
+6. Detect doublets using [Scrublet](https://doi.org/10.1016/j.cels.2018.11.005).
 7. Write QC-ed count matrix for further analyses.
 
 
@@ -21,7 +21,7 @@ Read the output files generated from the first half of '1_qc.ipynb', run SoupX i
 
 ## Combine samples using 2_combine_*.ipynb
 
-Combine individual samples into the following groups and perform batch correction using Scanorama for downstream analyses:
+Combine individual samples into the following groups and perform batch correction using [Scanorama](https://doi.org/10.1038/s41587-019-0113-3) for downstream analyses:
 1. Each treatment, including:<br>
    (1) Control, (2) Condensed milk, (3) Elevated platform, (4) Quinine, (5) Social
 2. Each treatment with control, including:<br>
@@ -42,7 +42,7 @@ Combine individual samples into the following groups and perform batch correctio
 As such, we retain as many overlapping genes in each combination as possible for further analyses.
 
 
-## Explore MapMyCells annotations using 3_mapmycells_*.ipynb
+## Explore [MapMyCells](https://knowledge.brain-map.org/mapmycells/process) annotations using 3_mapmycells_*.ipynb
 
 For each individual sample and combined samples, generate UMAPs, bar plots and tables using annotations from MapMyCells. 
 
