@@ -42,9 +42,9 @@ Combine individual samples into the following groups and perform batch correctio
 As such, we keep as many overlapped genes in each combination as possible for further analyses.
 
 
-## Generate plots and tables from MapMyCells annotations using 3_mapmycells_*.ipynb
+## Explore MapMyCells annotations using 3_mapmycells_*.ipynb
 
-For each individual sample and combined samples, generte UMAPs, barplots and tables using annotations from MapMyCells. 
+For each individual sample and combined samples, generate UMAPs, barplots and tables using annotations from MapMyCells. 
 
 
 ## Differentially expressed genes (DEGs) analyses using 4_DEG_*.ipynb
@@ -55,7 +55,8 @@ For each data listed below, generate pseudobulks using decoupleR, run DEG analys
 3. 1 treatment vs. 3 treatments (using the combined data in category 4)
 
 
+## Generte UMAPs using 5_UMAPs.ipynb
 
-
+Generate beautiful UMAPs that are consistent across the whole project.
 
 
