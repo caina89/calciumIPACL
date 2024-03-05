@@ -55,7 +55,7 @@ For each data listed below, generate pseudobulks using decoupleR, and run DEG an
 3. 1 treatment vs. 3 treatments (using the combined data in category 4)
 
 
-## Generate plots using codes from 'plots'
+## Generate plots using codes from 'plot'
 
 Create visually appealing and consistent plots across the entire project.
 
