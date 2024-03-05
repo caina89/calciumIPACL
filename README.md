@@ -1,12 +1,12 @@
 # Calcium IPACL
 
-Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the pipeline recommended by this [paper](https://doi.org/10.1038/s41576-023-00586-w)
+Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the pipeline recommended in this [paper](https://doi.org/10.1038/s41576-023-00586-w).
 
 ## Quality Control (QC) using 1_qc.ipynb
 
 Perfrom QC on each individual sample using the following steps:
 1. Calculate QC metrics.
-2. Filter out low-quality cells based on MADs parameters.
+2. Filter out low-quality cells based on the median absolute deviations ([MADs](https://doi.org/10.1186/s13059-020-02136-7)) parameters.
 3. Generate files for running SoupX in R.
 4. Read output files from SoupX.
 5. Filter out low-quality genes based on the SoupX-corrected count matrix.
