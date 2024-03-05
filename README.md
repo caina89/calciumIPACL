@@ -1,4 +1,5 @@
 # calciumIPACL
+
 Code to reproduce analyses in the Calcium IPACL paper: link_to_paper
 
 ## Quality Control (QC) using 1_qc.ipynb
@@ -19,6 +20,7 @@ Read output files generated from the first half of 1_qc.ipynb, run SoupX in R, w
 
 
 ## Combine samples using 2_combine_*.ipynb
+
 Combine individual samples into the following groups and perform batch correction using Scanorama for downstream analyses:
 1. Each treatment, including:<br>
    (1) control, (2) condense milk, (3) elevated platform, (4) quinine, (5) social
@@ -39,10 +41,12 @@ Combine individual samples into the following groups and perform batch correctio
 
 
 ## Generate plots and tables from MapMyCells annotations using 3_mapmycells_*.ipynb
-Generte UMAPs, barplots and tables using annotations from MapMyCells. For each individual sample and combined samples. 
+
+For each individual sample and combined samples, generte UMAPs, barplots and tables using annotations from MapMyCells. 
 
 
 ## Differentially expressed genes (DEGs) analyses using 4_DEG_*.ipynb
+
 For each data listed below, generate pseudobulks using decoupleR, run DEG analysis using DESeq2.
 1. 1 treatment vs. controls (using the combined data in category 2)
 2. 1 treatment vs. 1 treatment (using the combined data in category 4)
