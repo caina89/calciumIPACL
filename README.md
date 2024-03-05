@@ -21,19 +21,19 @@ Read output files generated from the first half of 1_qc.ipynb, run SoupX in R, w
 ## Combine samples using 2_combine_*.ipynb
 Combine individual samples into the following groups and perform batch correction using Scanorama for downstream analyses:
 1. Each treatment, including:<br>
-   (1) control, (2) condense milk, (3) elevated platform, (4) quinine, (5) social.
+   (1) control, (2) condense milk, (3) elevated platform, (4) quinine, (5) social
 2. Each treatment with control, including:<br>
-   (1) condense milk + control,<br>
-   (2) elevated platform + control,<br>
-   (3) quinine + control,<br>
-   (4) social + control.
+   (1) condense milk + control<br>
+   (2) elevated platform + control<br>
+   (3) quinine + control<br>
+   (4) social + control
 4. Two treatments, including:<br>
-   (1) elevated platform + condense milk,<br>
-   (2) quinine + condense milk,<br>
-   (3) quinine + elevated platform,<br>
-   (4) social + condense milk,<br>
-   (5) social + elevated platform,<br>
-   (6) social + quinine.
+   (1) elevated platform + condense milk<br>
+   (2) quinine + condense milk<br>
+   (3) quinine + elevated platform<br>
+   (4) social + condense milk<br>
+   (5) social + elevated platform<br>
+   (6) social + quinine
 5. All treatments without control.
 6. All treatments with control.
 
