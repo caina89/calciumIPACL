@@ -38,7 +38,7 @@ Combine individual samples into the following groups and perform batch correctio
 6. All treatments with control.
 
 
-## Generate plots and tables using MapMyCells annotations using 3_mapmycells_*.ipynb
-
+## Generate plots and tables from MapMyCells annotations using 3_mapmycells_*.ipynb
+Plot UMAPs and barplots using annotations from MapMyCells. For each individual sample and combined samples. 
 
 
