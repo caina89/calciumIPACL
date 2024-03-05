@@ -39,6 +39,8 @@ Combine individual samples into the following groups and perform batch correctio
 4. All treatments without control.
 5. All treatments with control.
 
+As such, we keep as many overlapped genes in each combination as possible for further analyses.
+
 
 ## Generate plots and tables from MapMyCells annotations using 3_mapmycells_*.ipynb
 
