@@ -2,7 +2,7 @@
 
 Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the recommended pipeline suggested in the best practice for single-cell data analysis [2019](https://doi.org/10.15252/msb.20188746), [2023](https://doi.org/10.1038/s41576-023-00586-w) and the online [tutorial](https://www.sc-best-practices.org/preamble.html), the main package used is [SCANPY](https://doi.org/10.1186/s13059-017-1382-0).
 
-## Quality Control (QC) using 1_qc.ipynb
+## Quality Control (QC) using 1_qc.py
 
 Perfrom QC on each individual sample using the following steps:
 1. Calculate QC metrics.
@@ -19,7 +19,7 @@ Perfrom QC on each individual sample using the following steps:
 Read the output files generated from the first half of '1_qc.ipynb', run SoupX in R, and write the corrected count matrix for further analyses.
 
 
-## Combine samples using 2_combine_*.ipynb
+## Combine samples using 2_combine.py
 
 Combine individual samples into the following groups and perform batch correction using [Scanorama](https://doi.org/10.1038/s41587-019-0113-3) for downstream analyses:
 1. Each treatment, including:<br>
@@ -42,12 +42,12 @@ Combine individual samples into the following groups and perform batch correctio
 As such, we retain as many overlapping genes in each combination as possible for further analyses.
 
 
-## Explore MapMyCells annotations using 3_mapmycells_*.ipynb
+## Explore MapMyCells annotations using 3_Visualize_MayMyCells.py
 
 For each individual sample and combined samples, generate UMAPs, bar plots and tables using annotations from [MapMyCells](https://knowledge.brain-map.org/mapmycells/process). 
 
 
-## Differentially expressed genes (DEGs) analyses using 4_DEG_*.ipynb
+## Differentially expressed genes (DEGs) analyses using 4_DEG.py
 
 For each data listed below, generate pseudobulks using [decoupleR](https://doi.org/10.1093/bioadv/vbac016), and run DEG analysis using [DESeq2](https://doi.org/10.1186/s13059-014-0550-8).
 1. 1 treatment vs. controls (using the combined data in category 2)
