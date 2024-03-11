@@ -14,7 +14,7 @@ Perfrom QC on each individual sample using the following steps:
 7. Write QC-ed count matrix for further analyses.
 
 
-## SoupX using 1_qc_soupx.ipynb (in R).
+## SoupX using 1_qc_SoupX.R (in R).
 
 Read the output files generated from the first half of '1_qc.ipynb', run SoupX in R, and write the corrected count matrix for further analyses.
 
