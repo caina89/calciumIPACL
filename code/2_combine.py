@@ -8,27 +8,16 @@ from matplotlib import colors
 
 
 ## read data 
-# shown as an example: for samples 15, 23, 24, 25, scrublet couldn't run, so i use the data wihtout doublet detection.
-# condensed milk
+# Note that for samples 14, 15, 23, 24 and 25, Scrublet couldn't converge. This is likely to be fine because even when Scrublet converges, we remove very few cells in each sample. As a result, we use the data wihtout doublet detection for these five samples.
+# Here we show combination of condensed milk as an example: 
 path_sample1 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "11" + ".h5ad")
 path_sample2 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "12" + ".h5ad")
 path_sample3 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "13" + ".h5ad")
-# elevated platform
-path_sample4 = sc.read_h5ad(path_data + "/finalsoupx_sample" + "23" + ".h5ad")
-path_sample5 = sc.read_h5ad(path_data + "/finalsoupx_sample" + "24" + ".h5ad")
-path_sample6 = sc.read_h5ad(path_data + "/finalsoupx_sample" + "25" + ".h5ad")
-# quinine
-path_sample7 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "19" + ".h5ad")
-path_sample8 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "20" + ".h5ad")
-path_sample9 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "21" + ".h5ad")
-# social
-path_sample10 = sc.read_h5ad(path_data + "/finalsoupx_sample" + "15" + ".h5ad")
-path_sample11 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "16" + ".h5ad")
+
 
 # concatenate samples
-adata = sample1.concatenate(sample2,sample3,sample4,sample5,sample6,sample7,sample8,sample9,sample10,sample11)
+adata = sample1.concatenate(sample2,sample3)
 adata.obs=adata.obs.drop(["doublet","doublet_score"],axis=1)
-
 
 
 ## normalization
@@ -52,16 +41,8 @@ plt.savefig(pathout_qc+"/combine_normalization_"+title+".pdf")
 batch1 = adata[adata.obs["batch"] == "0", :]
 batch2 = adata[adata.obs["batch"] == "1", :]
 batch3 = adata[adata.obs["batch"] == "2", :]
-batch4 = adata[adata.obs["batch"] == "3", :]
-batch5 = adata[adata.obs["batch"] == "4", :]
-batch6 = adata[adata.obs["batch"] == "5", :]
-batch7 = adata[adata.obs["batch"] == "6", :]
-batch8 = adata[adata.obs["batch"] == "7", :]
-batch9 = adata[adata.obs["batch"] == "8", :]
-batch10 = adata[adata.obs["batch"] == "9", :]
-batch11 = adata[adata.obs["batch"] == "10", :]
 
-split = [batch1,batch2,batch3,batch4,batch5,batch6,batch7,batch8,batch9,batch10,batch11]
+split = [batch1,batch2,batch3]
 
 # define scanorama
 def runScanorama(adata, hvg = None):
