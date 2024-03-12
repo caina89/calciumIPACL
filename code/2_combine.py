@@ -14,10 +14,10 @@ path_sample1 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "11" + ".h5ad
 path_sample2 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "12" + ".h5ad")
 path_sample3 = sc.read_h5ad(path_data + "/soupx_scrublet_sample" + "13" + ".h5ad")
 
-
 # concatenate samples
 adata = sample1.concatenate(sample2,sample3)
 adata.obs=adata.obs.drop(["doublet","doublet_score"],axis=1)
+
 
 
 ## normalization
@@ -66,9 +66,5 @@ with plt.rc_context():  # Use this to set figure params like size and dpi
 
 # write data
 adata.write(path_data+"/combine_"+title+".h5ad")
-
-
-
-
 
 
