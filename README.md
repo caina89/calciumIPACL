@@ -8,10 +8,9 @@ Perfrom QC on each individual sample using the following steps:
 1. Calculate QC metrics.
 2. Filter out low-quality cells based on the median absolute deviations ([MADs](https://doi.org/10.1186/s13059-020-02136-7)) parameters.
 3. Generate files for running [SoupX](https://doi.org/10.1093/gigascience/giaa151) in R.
-4. Read output files from SoupX.
-5. Filter out low-quality genes based on the SoupX-corrected count matrix.
-6. Detect doublets using [Scrublet](https://doi.org/10.1016/j.cels.2018.11.005).
-7. Write QC-ed count matrix for further analyses.
+4. Filter out low-quality genes based on the SoupX-corrected count matrix.
+5. Detect doublets using [Scrublet](https://doi.org/10.1016/j.cels.2018.11.005).
+6. Write QC-ed count matrix for further analyses.
 
 
 ## SoupX using 1_qc_SoupX.R (in R).
