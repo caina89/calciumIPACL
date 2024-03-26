@@ -15,7 +15,7 @@ Perfrom QC on each individual sample using the following steps:
 
 ## SoupX using 1_qc_SoupX.R (in R).
 
-Read the output files generated from the first half of '1_qc.ipynb', run SoupX in R, and write the corrected count matrix for further analyses.
+Run SoupX in R, to detect and correct for mRNA contamination
 
 
 ## Combine samples using 2_combine.py
