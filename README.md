@@ -1,6 +1,8 @@
 # Calcium IPACL
 
-Code to reproduce the analyses presented in the Calcium IPACL paper: link_to_paper. We in general follow the recommended pipeline suggested in the best practice for single-cell data analysis [2019](https://doi.org/10.15252/msb.20188746), [2023](https://doi.org/10.1038/s41576-023-00586-w) and the online [tutorial](https://www.sc-best-practices.org/preamble.html), the main package used is [SCANPY](https://doi.org/10.1186/s13059-017-1382-0).
+Code to reproduce the analyses presented in our paper: Chang S, Fermani F, Huang L, et al. Molecular and neural mechanisms of behavioural integration in the extended-amygdala. 
+
+We follow the recommended pipeline suggested in the best practice for single-cell data analysis [2019](https://doi.org/10.15252/msb.20188746), [2023](https://doi.org/10.1038/s41576-023-00586-w) and the online [tutorial](https://www.sc-best-practices.org/preamble.html), the main package used is [SCANPY](https://doi.org/10.1186/s13059-017-1382-0).
 
 ## Quality Control (QC) using 1_qc.py
 
@@ -56,5 +58,4 @@ For each data listed below, generate pseudobulks using [decoupleR](https://doi.o
 
 ## Generate plots using codes from 'plot'
 
-
-
+R scipts for plotting figures for scRNAseq analyses shown in the paper are in the ```plot``` directory
