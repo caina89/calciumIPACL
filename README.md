@@ -17,7 +17,7 @@ Perfrom QC on each individual sample using the following steps:
 
 ## SoupX using 1_qc_SoupX.R (in R).
 
-Run SoupX in R, to detect and correct for mRNA contamination
+Run SoupX in R, to detect and correct for ambient mRNA contamination.
 
 
 ## Combine samples using 2_combine.py
