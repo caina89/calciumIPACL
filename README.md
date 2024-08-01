@@ -48,12 +48,14 @@ As such, we retain as many overlapping genes in each combination as possible for
 For each individual sample and combined samples, generate UMAPs, bar plots and tables using annotations from [MapMyCells](https://knowledge.brain-map.org/mapmycells/process). 
 
 
-## Differentially Expressed Genes (DEGs) analyses using 4_DEG.py
+## Differentially Gene Expression (DGEs) analyses using 4_DEG.py
 
 For each data listed below, generate pseudobulks using [decoupleR](https://doi.org/10.1093/bioadv/vbac016), and run DEG analysis using [DESeq2](https://doi.org/10.1186/s13059-014-0550-8).
 1. 1 treatment vs. controls (using the combined data in category 2)
 2. 1 treatment vs. 1 treatment (using the combined data in category 3)
 3. 1 treatment vs. 3 treatments (using the combined data in category 4)
+
+Our DGE analyses results are available here.
 
 
 ## Generate plots using codes from 'plot'
