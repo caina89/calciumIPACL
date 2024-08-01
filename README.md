@@ -55,7 +55,7 @@ For each data listed below, generate pseudobulks using [decoupleR](https://doi.o
 2. 1 treatment vs. 1 treatment (using the combined data in category 3)
 3. 1 treatment vs. 3 treatments (using the combined data in category 4)
 
-Our DGE analyses results are available here.
+Our DGE analyses results are available [here](https://github.com/caina89/calciumIPACL/blob/main/DGEResults.xlsx).
 
 
 ## Generate plots using codes from 'plot'
