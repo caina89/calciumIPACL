@@ -1,6 +1,6 @@
 # Calcium IPACL
 
-Code to reproduce single-cell transcriptomics (scRNAseq) analyses presented in our paper: Chang S, Fermani F, Huang L, et al. Molecular and neural mechanisms of behavioural integration in the extended-amygdala. 
+Code to reproduce single-cell transcriptomics (scRNAseq) analyses presented in our paper: [Chang S, Fermani F, Huang L, et al. Molecular and neural mechanisms of behavioural integration in the extended-amygdala. bioRxiv (2024)](https://www.biorxiv.org/content/10.1101/2024.04.29.591588v1)
 
 We follow the recommended pipeline suggested in the best practice for single-cell data analysis [2019](https://doi.org/10.15252/msb.20188746), [2023](https://doi.org/10.1038/s41576-023-00586-w) and the online [tutorial](https://www.sc-best-practices.org/preamble.html), the main package used is [SCANPY](https://doi.org/10.1186/s13059-017-1382-0).
 
